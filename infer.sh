@@ -1,0 +1,13 @@
+python inference.py \
+    --variant mobilenetv3 \
+    --checkpoint rvm_mobilenetv3.pth \
+    --device cpu \
+    --input-source "input.mp4" \
+    --downsample-ratio 0.25 \
+    --output-type video \
+    --output-background "image" \
+    --output-composition "composition.mp4" \
+    --output-alpha "alpha.mp4" \
+    --output-foreground "foreground.mp4" \
+    --output-video-mbps 4 \
+    --seq-chunk 12
